@@ -1,8 +1,9 @@
 import React from 'react'
+import { Navbar } from './components/index'
 
 function App() {
   return (
-    <div>App</div>
+    <Navbar />
   )
 }
 
