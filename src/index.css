@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
 /* Global Styling */
 
 :root {
     --clr-text: #f1f1f1;
-    --clr-bg: #2c71fcfb;
-    --bs-emphasis-color-rgb: var(--clr-text); 
+    --clr-bg: #f1f1f1;
+    --clr-layout: #2c71fcfb;
+    --clr-dim: #a1a1a1;
+    --clr-dark: #000;
 }
 
 * {

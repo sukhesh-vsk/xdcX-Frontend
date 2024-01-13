@@ -3,6 +3,7 @@ import { Banner, Navbar } from './components/index';
 import intro from './assets/video/intro.webm';
 import loop from './assets/video/loop.webm';
 import './App.css';
+import PtP from './components/P2P/PtP';
 
 function App() {
   const videoRef = useRef(null);
@@ -24,6 +25,7 @@ function App() {
       </video>
       <Navbar />
       <Banner />
+      <PtP />
     </div>
   );
 }

@@ -1,0 +1,33 @@
+.title {
+    color: var(--clr-layout);
+    font-size: 24px;
+    margin-left: 30%;
+}
+
+.colordim {
+    color: var(--clr-dim);
+}
+
+.colordark {
+    color: var(--clr-dark);
+}
+
+.showbalance {
+    align-items: center;
+}
+
+.xdclogo {
+    width: 40px;
+    height: 30px;
+}
+
+.balance {
+    font-family: 'Inconsolata', monospace !important;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.payment-img {
+    width: 85%;
+}
+
