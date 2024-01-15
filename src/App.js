@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
-import { Banner, Navbar } from './components/index';
+import { Banner, Navbar, PtP, Stake } from './components/index';
 import intro from './assets/video/intro.webm';
 import loop from './assets/video/loop.webm';
 import './App.css';
-import PtP from './components/P2P/PtP';
 
 function App() {
   const videoRef = useRef(null);
@@ -26,6 +25,7 @@ function App() {
       <Navbar />
       <Banner />
       <PtP />
+      <Stake />
     </div>
   );
 }

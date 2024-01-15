@@ -17,6 +17,11 @@ const PtP = () => {
       backgroundColor: '#2C71FC',
       borderRadius: '15px',
     },
+    '& .MuiOutlinedInput-root': {
+      '&:hover fieldset': {
+        border: 'none',
+      }
+    },
     '& .MuiInputLabel-root.MuiInputLabel-shrink': {
       color: '#000000cc',
       fontSize: '1rem',

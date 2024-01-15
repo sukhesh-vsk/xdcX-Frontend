@@ -1,0 +1,12 @@
+.bg {
+    background-color: #000000;
+}
+
+.head-text {
+    /* display: inline; */
+    background: -webkit-linear-gradient(57.75deg, #0fff60 14.44%, #2cffdd 85.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
