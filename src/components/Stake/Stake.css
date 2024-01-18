@@ -13,3 +13,7 @@
 .stake-container {
     height: 60vh;
 }
+
+.stake-btns {
+    gap: 4rem;
+}

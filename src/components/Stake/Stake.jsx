@@ -6,12 +6,13 @@ import './Stake.css'
 
 const Stake = () => {
   const CustomTextField = styled(TextField)({
+    border: '0px',
     '& .MuiInputBase-root': {
       backgroundColor: '#A7FFC54D',
       borderRadius: '15px',
     },
     '& .MuiOutlinedInput-notchedOutline': {
-      borderWidth: '0px',
+      border: '0px',
     },
     '& .MuiInputLabel-root.MuiInputLabel-shrink': {
       fontWeight: '600',
@@ -26,9 +27,13 @@ const Stake = () => {
     borderRadius: '10px',
     backgroundColor: className === 'stake-btn' ? '#A7FFC5' : '#1B1B1BCC',
     color: className === 'stake-btn' ? '#000000CC' : '#A7FFC5CC',
-    fontSize: '12px',
+    fontSize: '14px',
     fontWeight: '600',
-    heigth: '40px'
+    height: '40px',
+    width: '100px',
+    '&:hover': {
+      backgroundColor: className === 'stake-btn' ? '#a7ffc5a3' : '#1b1b1b78',
+    }
   }))
 
   return (
@@ -56,7 +61,7 @@ const Stake = () => {
           <h4>Rewards: 0.000 XDC</h4>
         </Grid>
       </Grid>
-      <Grid item xs={6} className="d-flex justify-content-center align-items-center">
+      <Grid item xs={6} className="d-flex justify-content-center align-items-center stake-btns pe-5">
         <CustomButton className='stake-btn'>Stake</CustomButton>
         <CustomButton className='unstake-btn'>Unstake</CustomButton>
       </Grid>
