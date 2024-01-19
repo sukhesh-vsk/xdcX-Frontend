@@ -40,3 +40,20 @@
 .ptp-field {
     padding-left: 15%;
 }
+
+.ptp-head {
+    position: relative;
+}
+
+.ptp-head::before {
+    content: "";
+    border-radius: 50%;
+    opacity: 0.54;
+    filter: blur(100px);
+    background: -webkit-linear-gradient(57.75deg, #32ef12 14.44%, #30fea9 85.65%);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    z-index: -1;
+    left: 0;
+}

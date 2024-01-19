@@ -8,7 +8,7 @@ const Stake = () => {
   return (
     <section className='container-fluid stake-container'>
       <div className='col-md-12 my-5'>
-        <h2 className='head-text m-0'>Stake Credits</h2>
+        <h2 className='head-text stake-head m-0'>Stake Credits</h2>
       </div>
       <div className="col-md-12 mb-5 row">
         <div className='col-md-6 stake-field'>

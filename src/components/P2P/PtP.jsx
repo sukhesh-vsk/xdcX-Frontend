@@ -10,7 +10,8 @@ const PtP = () => {
   return (
     <section className='container-fluid ptp-container'>
       <div className='col-md-12 py-5'>
-        <h2 className='head-text'>P2P Fund Transfer</h2>
+        {/* <span className='shadow-gradient'/> */}
+        <h2 className='head-text ptp-head'>P2P Fund Transfer</h2>
       </div>
       <div className='col-md-12 row mb-5'>
       <div className='col-md-8 ptp-field'>

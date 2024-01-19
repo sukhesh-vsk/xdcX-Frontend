@@ -11,3 +11,15 @@
 .color-dim {
     color: #f1f1f1b6;
 }
+
+.shadow-gradient {
+    content: "";
+    border-radius: 50%;
+    opacity: 0.54;
+    filter: blur(100px);
+    background: -webkit-linear-gradient(57.75deg, #32ef12 14.44%, #30fea9 85.65%);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 10%;
+}
