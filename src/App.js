@@ -16,16 +16,19 @@ function App() {
 
   return (
     <div className='App video-background'>
-      <video ref={videoRef} onEnded={handleVideoEnded} autoPlay playsInline muted className='video intro'>
+      {/* <video ref={videoRef} onEnded={handleVideoEnded} autoPlay playsInline muted className='video intro'>
         <source src={intro} type='video/webm' />
       </video>
       <video ref={loopRef} loop playsInline muted className='video loop'>
         <source src={loop} type='video/webm' />
-      </video>
+      </video> */}
       <Navbar />
       <Banner />
+      <div className='divider'/>
       <PtP />
+      <div className='divider'/>
       <Stake />
+      <div className='divider'/>
     </div>
   );
 }

@@ -11,3 +11,7 @@
     opacity: 0;
     z-index: -1;
 }
+
+.divider {
+    border-bottom: 1px solid var(--clr-dim);
+}

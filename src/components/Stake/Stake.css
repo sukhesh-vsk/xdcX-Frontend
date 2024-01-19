@@ -2,10 +2,11 @@
     background-color: #000000;
 }
 
-.stake-container {
-    height: 60vh;
+.stake-field {
+    padding-left: 15%;
 }
 
 .stake-btns {
     gap: 4rem;
 }
+
