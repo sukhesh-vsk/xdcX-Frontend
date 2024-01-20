@@ -1,5 +1,6 @@
 .banner-container {
     height: 92vh;
+
     span {
         font-size: 5.5vw;
         font-weight: 450;
@@ -25,5 +26,42 @@
     width: 300px;
     height: 200px;
     left: 14%;
-    transform: translateY(38%);
+    transform: translateY(88%);
+}
+
+.fade-in-up {
+    animation: fade-in-up 1.5s ease forwards;
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20px);
+        position: relative;
+        top: 100%;
+    }
+}
+
+span {
+    display: inline-block;
+    overflow: hidden;
+    animation: .3s swift-up ease-in-out forwards;
+}
+
+i {
+    font-style: normal;
+    position: relative;
+    top: 105px;
+    animation: .5s swift-up ease-in-out forwards;
+}
+
+@keyframes swift-up {
+    to {
+        top: 0;
+    }
 }

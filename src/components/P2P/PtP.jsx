@@ -10,7 +10,6 @@ const PtP = () => {
   return (
     <section className='container-fluid ptp-container'>
       <div className='col-md-12 py-5'>
-        {/* <span className='shadow-gradient'/> */}
         <h2 className='head-text ptp-head'>P2P Fund Transfer</h2>
       </div>
       <div className='col-md-12 row mb-5'>
@@ -43,7 +42,7 @@ const PtP = () => {
         </div>
       </div>
       <div className='col-md-4'>
-        <img src={payment} alt="payment image" className='d-flex justify-content-center payment-img' />
+        <img src={payment} alt="payment image" className='d-flex justify-content-center payment-img fade-in-left' />
       </div>
       </div>
     </section>
