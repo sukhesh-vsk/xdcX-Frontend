@@ -15,7 +15,10 @@ const Navbar = () => {
                         <a className="nav-link" href="#">HOME</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">LINK</a>
+                        <a className="nav-link" href="#">P2P</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Stake</a>
                     </li>
                 </ul>
             </div>
