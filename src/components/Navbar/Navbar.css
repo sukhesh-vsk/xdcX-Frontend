@@ -1,0 +1,48 @@
+/* .nav-link {
+    font-size: 1.1rem;
+    margin-right: 2rem;
+} */
+
+nav div ul li {
+    display: inline-block;
+}
+
+nav div ul li a {
+    color: var(--clr-text) !important;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav div ul li a,
+nav div ul li a:after,
+nav div ul li a:before {
+  transition: all .3s;
+}
+nav div ul li a:hover {
+  color: #0fff60 ;
+}
+
+.stroke ul li a {
+  position: relative;
+}
+
+.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #0fff60 ;
+  height: 1px;
+}
+.stroke ul li a:hover:after {
+  width: 100%;
+}
