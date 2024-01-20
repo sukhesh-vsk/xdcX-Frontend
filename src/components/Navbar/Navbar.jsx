@@ -3,8 +3,8 @@ import CustomButton from '../Custom/CustomButton'
 import './Navbar.css'
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg px-5 pt-5">
-            <a className="navbar-brand head-text m-0" href="#">XDCX</a>
+        <nav className="navbar navbar-expand-lg px-5 pt-5 sticky-top" style={{ backdropFilter: 'blur(2px)' }}>
+            <a className="navbar-brand head-text m-0" href="#banner">XDCX</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -12,13 +12,13 @@ const Navbar = () => {
             <div className="collapse navbar-collapse d-flex justify-content-center stroke" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto d-flex justify-content-around">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">HOME</a>
+                        <a className="nav-link" href="#banner">HOME</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">P2P</a>
+                        <a className="nav-link" href="#ptp">P2P</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Stake</a>
+                        <a className="nav-link" href="#stake">Stake</a>
                     </li>
                 </ul>
             </div>

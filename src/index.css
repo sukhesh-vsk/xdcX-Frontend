@@ -4,8 +4,6 @@
 :root {
     --clr-text: #f1f1f1;
     --clr-bg: #000000;
-    /* --clr-bg: #f1f1f1; */
-    /* --clr-layout: #2c71fcfb; */
     --clr-dim: #a1a1a1;
     --clr-dark: #000;
     --clr-primarybtn: #A7FFC5;
@@ -57,7 +55,6 @@ body {
     border-radius: 50%;
     position: absolute;
     pointer-events: none;
-    /* transition: all 0.1s ease-out; */
     z-index: 9999;
     filter: blur(50px);
     background: radial-gradient(circle at 50% 50%, #32ef12, #30fea9);

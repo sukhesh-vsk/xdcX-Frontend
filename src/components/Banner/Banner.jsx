@@ -32,7 +32,7 @@ const Banner = () => {
   }, []);
   
   return (
-    <section className='container-fluid banner-container row d-flex align-items-center'>
+    <section className='container-fluid banner-container row d-flex align-items-center' id="banner">
       <div className='col-md-7 banner-text'>
         <span className='shadow-gradient' />
           <span ref={swiftup} className="text-start swift-up-text" style={{color: '#6fff9f'}}>Stake Smart, Pay Smarter with xdcX! </span>

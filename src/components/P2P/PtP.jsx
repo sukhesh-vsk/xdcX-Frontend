@@ -21,7 +21,7 @@ const PtP = () => {
   };
 
   return (
-    <section className='container-fluid ptp-container' style={{ position: 'relative' }}>
+    <section className='container-fluid ptp-container' style={{ position: 'relative' }} id="ptp">
       <div className='col-md-12 py-5'>
         <h2 ref={bounce} className='head-text ptp-head bounce-in'>P2P Fund Transfer</h2>
       </div>

@@ -8,7 +8,7 @@ const Stake = () => {
   const bounce = useIntersectionObserver('bounce-in');
 
   return (
-    <section className='container-fluid stake-container'>
+    <section className='container-fluid stake-container' id='stake'>
       <div className='col-md-12 my-5'>
         <h2 ref={bounce} className='head-text stake-head m-0'>Stake Credits</h2>
       </div>
