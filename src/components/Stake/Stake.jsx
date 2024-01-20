@@ -1,14 +1,16 @@
-import React from 'react'
-
+import React from 'react';
 import CustomButton from '../Custom/CustomButton'
 import CustomTextField from '../Custom/CustomTextfield'
+import useIntersectionObserver from '../Custom/CustomAnimation';
 import './Stake.css'
 
 const Stake = () => {
+  const bounce = useIntersectionObserver('bounce-in');
+
   return (
     <section className='container-fluid stake-container'>
       <div className='col-md-12 my-5'>
-        <h2 className='head-text stake-head m-0'>Stake Credits</h2>
+        <h2 ref={bounce} className='head-text stake-head m-0'>Stake Credits</h2>
       </div>
       <div className="col-md-12 mb-5 row">
         <div className='col-md-6 stake-field'>

@@ -3,14 +3,18 @@ import React from 'react'
 import './PtP.css'
 import CustomTextField from '../Custom/CustomTextfield';
 import CustomButton from '../Custom/CustomButton';
+import useIntersectionObserver from '../Custom/CustomAnimation';
 import payment from '../../assets/img/payment.png'
 import xdc from '../../assets/img/xdc.png'
 
 const PtP = () => {
+  const bounce = useIntersectionObserver('bounce-in');
+  const fadeimage = useIntersectionObserver('fade-in-left');
+
   return (
     <section className='container-fluid ptp-container'>
       <div className='col-md-12 py-5'>
-        <h2 className='head-text ptp-head'>P2P Fund Transfer</h2>
+        <h2 ref={bounce} className='head-text ptp-head bounce-in'>P2P Fund Transfer</h2>
       </div>
       <div className='col-md-12 row mb-5'>
       <div className='col-md-8 ptp-field'>
@@ -42,7 +46,7 @@ const PtP = () => {
         </div>
       </div>
       <div className='col-md-4'>
-        <img src={payment} alt="payment image" className='d-flex justify-content-center payment-img fade-in-left' />
+        <img ref={fadeimage} src={payment} alt="payment image" className='d-flex justify-content-center payment-img fade-in-left' />
       </div>
       </div>
     </section>
