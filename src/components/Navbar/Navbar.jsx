@@ -1,7 +1,12 @@
 import React from 'react'
+import { CPopover, CButton } from '@coreui/react'
+
 import CustomButton from '../Custom/CustomButton'
+import qtn from '../../assets/img/question.png'
 import './Navbar.css'
+
 const Navbar = () => {
+    const walletInfo = "TVL: 1100.12424 XDC\nAPY: 8-10%\nExchange Rate: \n1 XDC = 0.892473118279 XDCX";
     return (
         <nav className="navbar navbar-expand-lg px-5 pt-5 sticky-top" style={{ backdropFilter: 'blur(2px)' }}>
             <a className="navbar-brand head-text m-0" href="#banner">XDCX</a>
@@ -22,6 +27,16 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
+            <div className='d-flex align-items-center'>
+                <div>
+                    <CPopover
+                        content={<div style={{ whiteSpace: 'pre-line' }}>{walletInfo}</div>}
+                        placement="left"
+                        trigger={['hover', 'focus']}
+                    >
+                        <img src={qtn} alt="wallet info" className='me-3 info' />
+                    </CPopover>
+                </div>
                 <CustomButton
                     className="btn btn-green"
                     type="submit"
@@ -29,33 +44,11 @@ const Navbar = () => {
                 >
                     Connect to Wallet
                 </CustomButton>
+            </div>
             <div>
 
             </div>
         </nav>
-        // <nav className="navbar navbar-expand-lg mx-5 mt-3 sticky-top">
-        //     <div className="container-fluid d-flex space-around">
-        //         <span>
-        //             <a className="navbar-brand head-text" href="#">XDCX</a>
-        //         </span>
-        //         <div>
-        //             <ul className='d-flex justify-content-around'>
-        //                 <li>HOME</li>
-        //                 <li>HOME</li>
-        //                 <li>HOME</li>
-        //             </ul>
-        //         </div>
-        //         <div id="navbarSupportedContent">
-        //             <CustomButton 
-        //                 className="btn btn-green"
-        //                 type="submit"
-        //                 style={{width: "180px"}}
-        //             >
-        //                 Connect to Wallet
-        //             </CustomButton>
-        //         </div>
-        //     </div>
-        // </nav>
     )
 }
 
